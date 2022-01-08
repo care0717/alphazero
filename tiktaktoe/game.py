@@ -37,7 +37,7 @@ class State:
         if self.is_lose():
             return False
         for i in range(self.size * self.size):
-            if self.pieces[i] == 0 or self.enemy_pieces[i] == 0:
+            if self.pieces[i] == 0 and self.enemy_pieces[i] == 0:
                 return False
         return True
 
